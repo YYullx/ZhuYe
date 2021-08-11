@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>这里有好多小游戏哦</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .w {
+            width: 1200px;
+            margin: 100px auto;
+        }
+        .nav_menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            /* background-color: #4caf50; */
+            /* border: 1px solid #ccc; */
+            padding: 10px;
+            color: #fff;
+            
+        }
+        .menu_item {
+            position: relative;
+            flex: 1;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+            transform-style: preserve-3d;
+            transition: all 0.5s;
+            /* margin: 0 5px; */
+        }
+        .menu_item:hover {
+            cursor: pointer;
+            transform: rotateX(90deg);
+        }
+        .home, .web_home {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            perspective: 300px;
+        }
+        .home {
+            background-color: #23ada6;
+            z-index: 11;
+            transform: translateZ(25px);
+        }
+        .web_home {
+            font-size: larger;
+            background-color: #009688;
+            transform: translateY(25px) rotateX(-90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav_menu w">
+        <div class="menu_item">
+            <div class="home">4399</div>
+            <div class="web_home"><a href="http://www.4399.com/">4399</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">7k7k</div>
+            <div class="web_home"><a href="http://www.7k7k.com/">7k7k</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">2214</div>
+            <div class="web_home"><a href="https://www.2214.cn/">2214</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">3366</div>
+            <div class="web_home"><a href="http://3366.3199.cn/">3366</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">3699</div>
+            <div class="web_home"><a href="http://www.3699.cn/">3699</a></div>
+        </div>
+    </div>
+    <div class="nav_menu w">
+        <div class="menu_item">
+            <div class="home">打弹珠</div>
+            <div class="web_home"><a href="dadanzhu/index.html">打弹珠</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">123小游戏</div>
+            <div class="web_home"><a href="123xiaoyouxi/index.html">123小游戏</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">箭头大战</div>
+            <div class="web_home"><a href="jiantousheji/index.html">箭头大战</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">贪吃蛇</div>
+            <div class="web_home"><a href="tanchishe/index.html">贪吃蛇</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">俄罗斯方块</div>
+            <div class="web_home"><a href="eluosi/index.html">俄罗斯方块</a></div>
+        </div>
+    </div>
+    <div class="nav_menu w">
+        <div class="menu_item">
+            <div class="home">3D魔方</div>
+            <div class="web_home"><a href="3Dmofang/index.html">3D魔方</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">坦克大战</div>
+            <div class="web_home"><a href="Battle_City/index.html">坦克大战</a></div>
+    </div>
+
+        <script type="text/javascript" src="js/snowflakes.min.1.0.0.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <div style="text-align:center;">
+        </div>
+</body>
+
+</html>

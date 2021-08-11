@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   /* background: linear-gradient(to bottom, #171717, #494e73, #4e7290, #262f46); */
+   background: linear-gradient(to bottom, #57c1eb 0%, #2b9aee 100%);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>eluosi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            
+            overflow: hidden;
+            background: url(images/bg2.png) repeat-x center bottom, -webkit-linear-gradient(top, skyblue, white);
+            background-size: 20% auto;
+        }
+        
+        h2 {
+            width: 100%;
+            float: left;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: 10px auto;
+            float: left;
+            margin-right: 15px;
+            background: #252225;
+        }
+        
+        td {
+            border: 1px solid #424242;
+            width: 25px;
+            height: 25px;
+        }
+        
+        .c1 {
+            background: linear-gradient(to top, pink, red);
+        }
+        
+        .c2 {
+            background: linear-gradient(to top, rgba(255, 0, 255, 0.972), purple);
+        }
+        
+        .c3 {
+            background: linear-gradient(to top, rgb(229, 255, 0), gold);
+        }
+        
+        .c4 {
+            background: linear-gradient(to top, rgb(13, 251, 200), green);
+        }
+        
+        .c5 {
+            background: linear-gradient(to top, hsl(281, 94%, 52%), rgb(0, 128, 117));
+        }
+        
+        .c6 {
+            background: linear-gradient(to top, hsl(125, 90%, 51%), rgb(128, 0, 79));
+        }
+        
+        .c7 {
+            background: linear-gradient(to top, rgb(0, 128, 32), #698000);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="score">分数：0</h2>
+    <h2 id="f">帧编号：0</h2>
+    <script src='js/jquery-3.2.1.min.js'></script>
+    <script src='js/BLOCK_JSON.js'></script>
+    <script src='js/Game.js'></script>
+    <script src='js/Block.js'></script>
+    <script src='js/Map.js'></script>
+    
+    <script>
+        // var game = new Game()
+        var game = new Game()
+    </script>
+
+    <audio id="music" autoplay="autoplay" loop="loop" preload="preload">
+        <source src="images/bgm.mp3" />
+    </audio>
+
+    <script type="text/javascript">
+        window.onload = function(){
+                 setInterval("toggleSound()",100);
+            }
+    
+        function toggleSound() {
+                    var music = document.getElementById("music");//获取ID  
+                        
+                    if (music.paused) { //判读是否播放  
+                        music.paused=false;
+                        music.play(); //没有就播放 
+                    }    
+            }
+    </script>
+
+</body>
+
+</html>
