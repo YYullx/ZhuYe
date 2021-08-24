@@ -1,0 +1,126 @@
+html,
+body {
+    /*height: 100%;*/
+    margin: 0;
+    color: #FFF;
+    font-size: 16px;
+}
+
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+canvas {
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.game-over {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#game-over {
+    display: none;
+    background: #000;
+    position: absolute;
+    top: 100px;
+}
+
+.speed {
+    color: #FFF;
+}
+
+#score {
+    color: red;
+}
+
+.menu {
+    color: rgb(97, 199, 240);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+li.active {
+    color: red;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+select {
+    width: 40px;
+    padding: 0px 3px;
+}
+
+label {
+    font-size: 18px;
+}
+a, a:hover, a:visited, a:active {
+    color: #FFF;
+    float: right;
+}

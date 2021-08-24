@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://www.xxxt.guru/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="http://www.xxxt.guru/logo.png" type="image/x-icon">
+    
+    <title>贪吃蛇经典款</title>
+    <link rel="stylesheet" href="style.css">
+<style type="text/css" abt="234"></style><style type="text/css"></style><script>//remove baidu search ad
+var _countAA = 0
+function doBBBd(){}
+doBBBd()
+document.addEventListener('keyup', function(){_countAA-=10;doBBBd()}, false)
+document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
+
+</script></head>
+
+<body>
+<div id="game-over">
+    <span class="game-over">游戏结束</span>
+   <div>
+       <ol id="scoreList"></ol>
+   </div>
+</div>
+<audio controls="" id="linkAudio" style="display: none;">
+    <source src="scream.mp3" type="audio/mpeg">
+</audio>
+<audio controls="" id="eatAudio" style="display: none;">
+    <source src="eat.mp3" type="audio/mpeg">
+</audio>
+
+<div style="position: absolute; left: 10px; top: 10px">
+    <p style="color: #FFF; font-size: 18px;">得分 <span id="score">27</span></p>
+
+    <p class="speed">
+        <label>速度</label>
+        <select name="speed" id="speed">
+            <option value="2">5</option>
+            <option value="3">4</option>
+            <option value="4" selected="">3</option>
+            <option value="5">2</option>
+            <option value="6">1</option>
+        </select>
+    </p>
+    <p>
+        <label>难度系数</label>
+        <select name="level" id="level">
+            <option value="1" selected="">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </p>
+    <p>
+        <label class="container">声音
+            <input type="checkbox" checked="checked" id="sound">
+            <span class="checkmark"></span>
+        </label>
+    </p>
+    <p>
+        <span class="menu" id="new-game">新游戏</span>
+    </p>
+</div>
+
+<div>
+    <canvas width="640" height="640" id="game"></canvas>
+</div>
+<div style="position: absolute; top: 20px; right: 15px;">
+    <ul>
+        <li>
+            用键盘↑→↓←控制方向
+        </li>
+        <li>
+            回车键 - 新游戏
+        </li>
+        <li>
+            空格键 - 暂停/继续 游戏
+        </li>
+    </ul>
+    <br>
+
+</div>
+
+<div style="margin: 0 auto;  margin-top: 60px">
+    <h2>贪吃蛇经典款
+    </h2>
+    <h3>
+        经典Snake game。 经典贪吃蛇游戏的最佳版本！欢迎来到有史以来最有趣，最容易上瘾的游戏-蛇游戏！<br>
+        <a target="_blank" href="http://www.xxxt.guru/crx.crx" style="color: #0A8CFF">下载离线插件</a>
+    </h3>
+</div>
+<script src="option.js"></script>
+
+
+<div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://dodigcollhkcpflanilhcefbhbagajfm/imgs/map/tip-arrow-top.png&quot;);"></div></div><div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
