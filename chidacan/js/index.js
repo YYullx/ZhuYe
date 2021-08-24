@@ -1,6 +1,7 @@
 var oliList = document.getElementsByTagName("li");
 var oman = document.getElementById("man");
 var obtnYes = document.getElementById("btnYes");
+var obtnYes2 = document.getElementById("btnYes2");
 var oUl = document.getElementById("vip");
 
 
@@ -54,6 +55,17 @@ obtnYes.onmousedown = function () {
 }
 obtnYes.onclick = function () {
     btnYes.style.boxShadow = "2px 2px 5px black";
+}
+
+obtnYes2.onmousedown = function () {
+    myDeg = myDeg + fun();
+    oman.style.transitionDuration = "3s";
+    obtnYes.style.boxShadow = "none";
+    console.log(myDeg);
+    oman.style.transform = "rotateZ(" + myDeg + "deg)";
+}
+obtnYes2.onclick = function () {
+    btnYes2.style.boxShadow = "2px 2px 5px black";
 }
 
 //VIP列表
