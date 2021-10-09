@@ -1,10 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>video</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .w {
+            width: 1200px;
+            margin: 100px auto;
+        }
+        .nav_menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            /* background-color: #4caf50; */
+            /* border: 1px solid #ccc; */
+            padding: 5px;
+            color: #fff;
+
+        }
+        .menu_item {
+            position: relative;
+            flex: 1;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+            transform-style: preserve-3d;
+            transition: all 0.5s;
+            /* margin: 0 5px; */
+        }
+        .menu_item:hover {
+            cursor: pointer;
+            transform: rotateX(90deg);
+        }
+        .home, .web_home {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            perspective: 300px;
+        }
+        .home {
+            background-color: #1abdbd;
+            z-index: 11;
+            transform: translateZ(25px);
+        }
+        .web_home {
+            font-size: larger;
+            background-color: #009688;
+            transform: translateY(25px) rotateX(-90deg);
+        }
+    </style>
+
 </head>
+
 <body>
-<video src="demo.mp4" autoplay="autoplay" controls="controls">测试视频</video>
+<div class="nav_menu w">
+    <div class="menu_item">
+        <div class="home">反方向的钟</div>
+        <div class="web_home"><a href="fanfangxiangdezhong.flv">反方向的钟</a></div>
+    </div>
+    <div class="menu_item">
+        <div class="home">demo</div>
+        <div class="web_home"><a href="demo.mp4">demo</a></div>
+    </div>
+    <div class="menu_item">
+        <div class="home">video</div>
+        <div class="web_home">
+            <video src="demo.mp4" controls="controls">
+            </video>movie
+        </div>
+    </div>
+    <div class="menu_item">
+        <div class="home">3366</div>
+        <div class="web_home"><a href="http://3366.3199.cn/">3366</a></div>
+    </div>
+    <div class="menu_item">
+        <div class="home">3699</div>
+        <div class="web_home"><a href="http://www.3699.cn/">3699</a></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/snowflakes.min.1.0.0.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<div style="text-align:center;">
+</div>
 </body>
+
 </html>
