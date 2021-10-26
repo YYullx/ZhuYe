@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+	</style>
+    <title>QPlayer</title>
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div style="text-align:center;">
+</div>
+<div id="QPlayer">
+    <div id="pContent">
+
+        <div id="player">
+            <span class="cover"></span>
+            <div class="ctrl">
+                <div class="musicTag marquee">
+                    <strong>Title</strong>
+                    <span> - </span>
+                    <span class="artist">Artist</span>
+                </div>
+                <div class="progress">
+                    <div class="timer left">0:00</div>
+                    <div class="contr">
+                        <div class="rewind icon"></div>
+                        <div class="playback icon"></div>
+                        <div class="fastforward icon"></div>
+                    </div>
+                    <div class="right">
+                        <div class="liebiao icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ssBtn" style="background:#000 none repeat scroll 0% 0%">
+            <div class="adf"></div>
+        </div>
+    </div>
+    <ol id="playlist"></ol>
+</div>
+
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+<script src="js/snowflakes.min.1.0.0.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    var playlist = [
+        {title: "你不要担心", artist: "李迪", mp3: "nibuyaodanxin.mp3", cover: "t.png",},
+        {title: "不再犹豫", artist: "beyond", mp3: "buzaiyouyu.mp3", cover: "t2.png",},
+		{title: "再见", artist: "张震岳", mp3: "zaijian.mp3", cover: "t.png",},
+        {title: "安河桥", artist: "吸毒歌手", mp3: "anheqiao.mp3", cover: "t2.png",},
+		{title: "斑马斑马", artist: "马頔", mp3: "banmabanma.mp3", cover: "t.png",},
+        {title: "成都", artist: "赵雷", mp3: "chengdu.mp3", cover: "t2.png",},
+		{title: "董小姐", artist: "还是那个吸毒歌手", mp3: "dongxiaojie.mp3", cover: "t.png",},
+        {title: "鼓楼", artist: "赵雷", mp3: "gulou.mp3", cover: "t2.png",},
+		{title: "海阔天空", artist: "beyond", mp3: "haikuotiankong.mp3", cover: "t.png",},
+        {title: "画", artist: "赵雷", mp3: "hua.mp3", cover: "t2.png",},
+        {title: "活着", artist: "郝云", mp3: "huozhe.mp3", cover: "t2.png",},
+		{title: "南方姑娘", artist: "赵雷", mp3: "nanfangguniang.mp3", cover: "t.png",},
+        {title: "女儿情", artist: "未知", mp3: "nverqing.mp3", cover: "t2.png",},
+		{title: "青城山下白素贞", artist: "赵雅芝？", mp3: "qingchengshanxiabaisuzhen.mp3", cover: "t.png",},
+        {title: "青花瓷", artist: "周杰伦", mp3: "qinghuaci.mp3", cover: "t2.png",},
+        {title: "说散就散", artist: "袁维娅", mp3: "shuosanjiusan.mp3", cover: "t.png",},
+        {title: "小情歌", artist: "苏打绿", mp3: "xiaoqingge.mp3", cover: "t2.png",},
+		{title: "夜空中最亮的星", artist: "逃跑计划", mp3: "yekongzhongzuiliangdexing.mp3", cover: "t.png",},
+    ];
+    var isRotate = true;
+    var autoplay = true;
+</script>
+<script src="js/player.js"></script>
+<script>
+
+    function bgChange() {
+        var lis = $('.lib');
+        for (var i = 0; i < lis.length; i += 2)
+            lis[i].style.background = 'rgba(246, 246, 246, 0.7)';
+    }
+
+    window.onload = bgChange;
+</script>
+
+</body>
+</html>
